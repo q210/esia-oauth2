@@ -64,7 +64,7 @@ def smime_sign(certificate_file, private_key_file, data, backend='m2crypto'):
         from M2Crypto import SMIME, BIO
 
         if not isinstance(data, bytes):
-            data = bytes(data)
+            data = data.encode('ascii')
 
         signer = SMIME.SMIME()
         signer.load_key(private_key_file, certificate_file)

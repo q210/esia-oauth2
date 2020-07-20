@@ -1,6 +1,6 @@
-cryptography==1.7
-PyJWT==1.4.2
-pytz==2016.4
-requests==2.21.0
+cryptography==2.9.2
+PyJWT==1.7.1
+pytz
+requests
 # latest version m2crypto with alter digest alogorithms support for SMIME
 git+https://gitlab.com/m2crypto/m2crypto.git
