@@ -7,10 +7,8 @@
 import os
 import os.path
 import uuid
-
-from ConfigParser import RawConfigParser
-
-from urllib import quote_plus, urlencode
+from configparser import RawConfigParser
+from urllib.parse import urlencode, quote_plus
 
 import jwt
 from jwt.exceptions import InvalidTokenError
